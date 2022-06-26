@@ -19,16 +19,16 @@ public class Empresa {
     public String crearVenta() {
         Venta venta = new Venta();
         System.out.println("Ingrese id del panel");
-        venta.setIdPanel(scanner.next());
+        venta.setIdPanel(scanner.nextLine());
         venta.setFechaVenta(LocalDateTime.now());
         System.out.println("ingrese el tipo documento del comprador");
-        venta.setTipoDocumentoComprador(scanner.next());
+        venta.setTipoDocumentoComprador(scanner.nextLine());
         System.out.println("Ingrese el id del comprador");
-        venta.setIdComprador(scanner.next());
+        venta.setIdComprador(scanner.nextLine());
         System.out.println("Ingrese el nombre del comprador");
-        venta.setNombreComprador(scanner.next());
+        venta.setNombreComprador(scanner.nextLine());
         System.out.println("ingrese descripcion de la venta");
-        venta.setDescripcionUso(scanner.next());
+        venta.setDescripcionUso(scanner.nextLine());
 
         listaVentas.add(venta);
 
@@ -45,15 +45,15 @@ public class Empresa {
     public String crearPanel() {
         Panel panel = new Panel();
         System.out.println("Ingrese el id del panel");
-        panel.setId(scanner.next());
+        panel.setId(scanner.nextLine());
         System.out.println("Ingrese la serie del panel");
-        panel.setSerie(scanner.next());
+        panel.setSerie(scanner.nextLine());
         System.out.println("Ingrese la descripción del panel");
-        panel.setDescripcion(scanner.next());
+        panel.setDescripcion(scanner.nextLine());
         System.out.println("Ingrese el tipo del panel");
-        panel.setTipo(scanner.next());
+        panel.setTipo(scanner.nextLine());
         System.out.println("Ingrese el modelo del panel");
-        panel.setModelo(scanner.next());
+        panel.setModelo(scanner.nextLine());
         System.out.println("Ingrese el año de fabricacion del panel");
         panel.setAnioFabricacion(scanner.nextInt());
         System.out.println("Ingrese el precio de venta del panel");
@@ -73,15 +73,15 @@ public class Empresa {
     public String crearSeguro() {
         Seguro seguro = new Seguro();
         System.out.println("Ingrese nombre de la empresa");
-        seguro.setNombreEmpresa(scanner.next());
+        seguro.setNombreEmpresa(scanner.nextLine());
         System.out.println("ingrese fecha inicio");
-        seguro.setFechaInicio(LocalDate.parse(scanner.next(),DateTimeFormatter.ISO_LOCAL_DATE));
+        seguro.setFechaInicio(LocalDate.parse(scanner.nextLine(),DateTimeFormatter.ISO_LOCAL_DATE));
         System.out.println("Ingrese fecha fin");
-        seguro.setFechaFin(LocalDate.parse(scanner.next(),DateTimeFormatter.ISO_LOCAL_DATE));
+        seguro.setFechaFin(LocalDate.parse(scanner.nextLine(),DateTimeFormatter.ISO_LOCAL_DATE));
         System.out.println("Ingrese descripcion");
-        seguro.setDescripcion(scanner.next());
+        seguro.setDescripcion(scanner.nextLine());
         System.out.println("Ingrese id del panel");
-        seguro.setIdPanel(scanner.next());
+        seguro.setIdPanel(scanner.nextLine());
 
         listaSeguros.add(seguro);
 

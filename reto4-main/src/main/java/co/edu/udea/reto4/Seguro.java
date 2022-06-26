@@ -1,7 +1,5 @@
 package co.edu.udea.reto4;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
